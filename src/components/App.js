@@ -1,5 +1,5 @@
 import React from "react";
-import Tabs from "./Tabs";
+import Tabs from "./Tabs.jsx";
 
 export default function App() {
   const tabsData = [

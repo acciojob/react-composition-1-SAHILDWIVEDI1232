@@ -1,34 +1,14 @@
-
 import React from "react";
-import {useState} from "react"
-import './../styles/App.css';
+import Tabs from "./Tabs";
 
 const App = () => {
-const[tab,setTab]=useState("tab1");
+  const tabsData = [
+    { title: "Tab 1", content: "This is content for Tab 1" },
+    { title: "Tab 2", content: "This is content for Tab 2" },
+    { title: "Tab 3", content: "This is content for Tab 3" },
+  ];
 
-  let content;
+  return <Tabs tabs={tabsData} />;
+};
 
-  if (tab === "tab1") {
-    content = <h2>This is Tab 1</h2>;
-  } else if (tab === "tab2") {
-    content = <h2>This is Tab 2</h2>;
-  } else {
-    content = <h2>This is Tab 3</h2>;
-  }
-    
-  
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    <ul>
-    <li onClick={()=>setTab("tab1")}>Tab1</li>
-    <li onClick={()=>setTab("tab2")}>Tab2</li>
-    <li onClick={()=>setTab("tab3")}>Tab3</li>
-    
-    </ul>
-{content}
-    </div>
-  )
-}
-
-export default App
+export default App;

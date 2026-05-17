@@ -14,7 +14,7 @@ const Tabs = ({ tabs }) => {
       </ul>
 
       <div>
-        {tabs[active].content}
+        {tabs[active] && tabs[active].content}
       </div>
     </div>
   );

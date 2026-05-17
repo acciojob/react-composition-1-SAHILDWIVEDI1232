@@ -26,7 +26,7 @@ const[tab,setTab]=useState("tab1");
     <li onClick={()=>setTab("tab3")}>Tab3</li>
     
     </ul>
-  
+{content}
     </div>
   )
 }
